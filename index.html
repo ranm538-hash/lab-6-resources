@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Trails, Water &amp; Sky</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <!-- The navbar toggler uses data-bs-target to open the drawer with id="site-menu". -->
+
+    <nav class="navbar md:navbar-expand bg-1 fg-2" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Trails, Water &amp; Sky</a>
+            <button class="btn-icon navbar-toggler" type="button"
+            data-bs-toggle="drawer" data-bs-target="#site-menu"
+            aria-controls="site-menu" aria-label="Open navigation">
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+
+        <dialog class="drawer drawer-end" id="site-menu" aria-labelledby="site-menu-title">
+            <div class="drawer-header">
+                <p class="drawer-title fw-bold" id="site-menu-title">Menu</p>
+                <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close navigation"></button>
+            </div>
+
+            <div class="drawer-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </dialog>
+        </div>
+    </nav>
+
+
+    <main class="container my-4">
+        <h1>Trails, Water &amp; Sky</h1>
+        <p>A personal photo journal of wooded paths, waterfront views, and changing skies.</p>
+
+        <!-- All carousel controls target the same carousel ID. -->
+
+        <div class="carousel carousel-overlay slide" id="photo-carousel">
+            <div class="carousel-inner rounded-5">
+                <div class="carousel-item active">
+                    <img src="images/golden-trail copy.jpg" class="d-block w-100" alt="Golden leaves and tall tree trunks beside a leaf-covered woodland trail">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/blue-sky copy.jpg" class="d-block w-100" alt="White clouds in a blue sky framed by leafy branches on the right">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/sun-over-water copy.jpg" class="d-block w-100" alt="A bird skims rippled water below a low orange sun and its reflection">
+                </div>
+            </div>
+
+            <div class="carousel-overlay-controls">
+                <div>
+                    <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button"
+                    data-bs-target="#photo-carousel" data-bs-slide="prev">
+                <span class="carousel-icon-prev" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button"
+            data-bs-target="#photo-carousel" data-bs-slide="next">
+            <span class="carousel-icon-next" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#photo-carousel" data-bs-slide-to="0"
+            class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#photo-carousel" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#photo-carousel" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+    </div>
+</div>
+
+
+
+
+</main>
+    
+</body>
+</html>
