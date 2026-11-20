@@ -38,6 +38,57 @@
         </div>
     </nav>
 
-    
+    <main class="container my-4">
+        <h1>Contact</h1>
+        <p>Ask about a photo or suggest a place to photograph.</p>
+        
+        <!-- Use the same value for the label's for and the field's id. -->
+
+        <form action="contact.html" method="get">
+            <div class="row g-4">
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <label class="form-label" for="first name">First name</label>
+                        <input class="form-control" type="text" id="first-name" required>
+                    </div>
+                 </div>
+                 <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <label class="form-label" for="email">Email</label>
+                        <input class="form-control" type="email" id="email" placeholder="name@example.com" required>
+                    </div>
+                 </div>
+                 <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <label class="form-label" for="topic">Topic</label>
+                        <select class="form-control" id="topic" required>
+                            <option value="">Choose a topic</option>
+                            <option value="locations">Photo locations</option>
+                            <option value="walks">Walking suggestions</option>
+                            <option value="photography">Photography questions</option>
+                            <option value="other">Other questions</option>
+                        </select>
+                    </div>
+                 </div>
+                 <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                    </div>
+                 </div>
+                 <div class="col-12 md:col-6">
+                    <div class="form-field">
+                        <input type="checkbox" class="check" id="consent">
+                        <label for="consent">I agree to be contacted about my message.</label>
+                    </div>
+                 </div>
+            </div>
+            <button class="btn-solid theme-primary mt-4" type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer class="bg-primary fg-contrast-primary text-center p-3">
+        <p class="mb-0">Trails, Water &amp; Sky · Original Photography</p>
+    </footer>
 </body>
 </html>
