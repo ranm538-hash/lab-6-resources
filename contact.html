@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Trails, Water &amp; Sky</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- The navbar toggler uses data-bs-target to open the drawer with id="site-menu". -->
+
+    <nav class="navbar md:navbar-expand bg-1 fg-2" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Trails, Water &amp; Sky</a>
+            <button class="btn-icon navbar-toggler" type="button"
+            data-bs-toggle="drawer" data-bs-target="#site-menu"
+            aria-controls="site-menu" aria-label="Open navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog class="drawer drawer-end" id="site-menu" aria-labelledby="site-menu-title">
+            <div class="drawer-header">
+                <p class="drawer-title fw-bold" id="site-menu-title">Menu</p>
+                <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close navigation"></button>
+            </div>
+            <div class="drawer-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </dialog>
+        </div>
+    </nav>
+
+    
+</body>
+</html>
